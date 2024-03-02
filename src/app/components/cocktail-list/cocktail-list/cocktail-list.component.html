@@ -1,0 +1,7 @@
+<h3 class="mb-20">{{ title }}</h3>
+<ng-container *ngIf="cocktails && cocktails.length > 0">
+  <ul class="mb-20 list-primary">
+    <li *ngFor="let cocktail of cocktails">{{ cocktail.name }}</li>
+  </ul>
+</ng-container>
+<button class="btn btn-primary">Ajouter un cocktail</button>
